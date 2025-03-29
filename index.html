@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Défilant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadPDF(pdfPath) {
+            document.getElementById('viewer').src = pdfPath;
+        }
+
+        function toggleSubmenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte1')">Texte 1</a>
+            <div id="submenu-texte1" class="submenu">
+                <a href="#" onclick="loadPDF('textes/texte_hugo_l1.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('textes/ll1_hugo.pdf')">Correction</a>
+            </div>
+        </div>
+
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte2')">Texte 2</a>
+            <div id="submenu-texte2" class="submenu">
+                <a href="#" onclick="loadPDF('textes/texte_dorion_l2.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('textes/ll2_dorion.pdf')">Correction</a>
+            </div>
+        </div>
+
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte3')">Texte 3</a>
+            <div id="submenu-texte3" class="submenu">
+                <a href="#" onclick="loadPDF('textes/texte_dorion_l3.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('textes/ll_3.pdf')">Correction</a>
+            </div>
+        </div>
+
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte4')">Texte 4</a>
+            <div id="submenu-texte4" class="submenu">
+                <a href="#" onclick="loadPDF('textes/texte_dorion_l4.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('textes/ll_4_dorion.pdf')">Correction</a>
+            </div>
+        </div>
+        
+        <a href="#" onclick="loadPDF('msfvenom.pdf')">MSFVenom</a>
+        <a href="#" onclick="loadPDF('hoaxshell.pdf')">HoaxShell</a>
+    </div>
+    <div class="container">
+        <iframe id="viewer" class="pdf-viewer"></iframe>
+    </div>
+</body>
+</html>

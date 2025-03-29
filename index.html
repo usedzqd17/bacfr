@@ -23,7 +23,7 @@
                 <h2>Menu </h2>
             </a>
         </div>
-        
+        <p> Thème 1 </p>
         
         <div class="submenu-container">
             <a href="#" onclick="toggleSubmenu('submenu-texte1')">Texte 1 (V.Hugo) </a>
@@ -56,11 +56,13 @@
                 <a href="#" onclick="loadPDF('ll_4_dorion.pdf')">Correction</a>
             </div>
         </div>
-
+        
+        <p> Thème 2 </p>
+        
         <div class="submenu-container">
             <a href="#" onclick="toggleSubmenu('submenu-texte5')">Abbé Prévost - Manon lescaut  </a>
             <div id="submenu-texte5" class="submenu">
-                <a href="https://www.lelivrescolaire.fr/page/1255557" onclick="loadPDF('')">livre scolaire </a>
+                <a href="https://www.lelivrescolaire.fr/page/1255557" onclick="loadPDF('')">livre scolaire (url) </a>
                 
             </div>
         </div>
@@ -82,11 +84,38 @@
             </div>
         </div>
         
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte8')">Texte 3 (H.Balzac)</a>
+            <div id="submenu-texte8" class="submenu">
+                <a href="#" onclick="loadPDF('texte_balzac.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('ll_balzac.pdf')">Correction</a>
+            </div>
+        </div>
+
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte9')">Texte 4 (A.Prévost)</a>
+            <div id="submenu-texte9" class="submenu">
+                <a href="#" onclick="loadPDF('texte_mort_manon.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('ll_la_mort_de_manon.pdf')">Correction</a>
+            </div>
+        </div>
+        <p>Thème 3</p>
+
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte10')">Texte 1 (O.Gouges)</a>
+            <div id="submenu-texte10" class="submenu">
+                <a href="#" onclick="loadPDF('texte_dedicace_reine.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('ll_dedicace_a_la_reine_gouges.pdf')">Correction</a>
+            </div>
+        </div>
+
         <a href="#" onclick="loadPDF('msfvenom.pdf')">-</a>
         <a href="#" onclick="loadPDF('hoaxshell.pdf')">-</a>
     </div>
     <div class="container">
         <iframe id="viewer" class="pdf-viewer"></iframe>
     </div>
+
+    
 </body>
 </html>

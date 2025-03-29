@@ -10,3 +10,4 @@ function toggleSubMenu(menuId) {
         menu.style.display = "block";
     }
 }
+

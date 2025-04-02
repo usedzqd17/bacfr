@@ -6,16 +6,9 @@
     <title>Menu Défilant</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <script>
-        function loadPDF(pdfPath) {
-            document.getElementById('viewer').src = pdfPath;
-        }
 
-        function toggleSubmenu(id) {
-            const submenu = document.getElementById(id);
-            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+    
+  
 </head>
 <body>
 
@@ -26,14 +19,17 @@
             </a>
         </div>
 
-        <div id="popup" class="popup hidden">
-            <div class="popup-content">
-                <span class="close-btn" onclick="closePopup()">&times;</span>
-                <h2>Pensez à envoyer vos textes pls  </h2>
-                <p>Pour la survie de tous </p>
-                <p>Ps : Je les afficherais </p>
-            </div>
-        </div>
+        
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZQ8DZDKGX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TZQ8DZDKGX');
+</script>
+
 
         <p> Thème 1 </p>
         <div class="submenu-container">
@@ -59,6 +55,8 @@
                 <a href="#" onclick="loadPDF('ll_3.pdf')">Correction</a>
             </div>
         </div>
+
+      
 
         <div class="submenu-container">
             <a href="#" onclick="toggleSubmenu('submenu-texte4')">Texte 4 (H.Dorion)</a>

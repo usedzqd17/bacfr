@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bac Français </title>
+    <title>Menu Défilant</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <script>
         function loadPDF(pdfPath) {
             document.getElementById('viewer').src = pdfPath;
@@ -17,14 +18,23 @@
     </script>
 </head>
 <body>
+
     <div class="sidebar">
         <div class="bar">
             <a href="https://usedzqd17.github.io/bacpro/" target="_blank">
                 <h2>Menu </h2>
             </a>
         </div>
+
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Pensez à envoyer vos textes pls  </h2>
+                <p>Pour la survie de tous </p>
+            </div>
+        </div>
+
         <p> Thème 1 </p>
-        
         <div class="submenu-container">
             <a href="#" onclick="toggleSubmenu('submenu-texte1')">Texte 1 (V.Hugo) </a>
             <div id="submenu-texte1" class="submenu">
@@ -129,7 +139,7 @@
             <a href="#" onclick="toggleSubmenu('submenu-texte13')">Texte 4 (Laclos)</a>
             <div id="submenu-texte13" class="submenu">
                 <a href="#" onclick="loadPDF('texte_ll_laclos.pdf')">Original</a>
-                <a href="#" onclick="loadPDF('attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez. ')">Correction ( pas encore sortie )</a> <p></p>
+                <a href="#" onclick="loadPDF('attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez.attendez. ')">Correction</a> <p></p>
             </div>
         </div>
 

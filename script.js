@@ -12,16 +12,31 @@ function toggleSubMenu(menuId) {
 }
 
 
+// Affiche la popup au chargement de la page
 window.onload = function () {
     showPopup();
 };
 
+// Fonction pour afficher la popup
 function showPopup() {
     const popup = document.getElementById("popup");
-    popup.classList.remove("hidden"); 
+    popup.classList.remove("hidden"); // Supprime la classe "hidden" pour afficher la popup
 }
 
+// Fonction pour fermer la popup
 function closePopup() {
     const popup = document.getElementById("popup");
-    popup.classList.add("hidden"); 
+    popup.classList.add("hidden"); // Ajoute la classe "hidden" pour masquer la popup
 }
+
+
+function loadPDF(pdfPath) {
+    document.getElementById('viewer').src = pdfPath;
+}
+
+function toggleSubmenu(id) {
+    const submenu = document.getElementById(id);
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+}
+
+

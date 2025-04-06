@@ -48,3 +48,16 @@ function toggleSubmenu(id) {
         submenu.style.display = 'block';
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const announcement = document.getElementById("announcement");
+
+    // Afficher l'annonce
+    announcement.classList.remove("hidden");
+
+    // Masquer l'annonce après 5 secondes
+    setTimeout(() => {
+        announcement.classList.add("hidden");
+    }, 8000);
+});

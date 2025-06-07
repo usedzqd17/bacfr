@@ -19,7 +19,13 @@
 
 <script src="script.js"></script>
 
-
+ <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2> </h2>
+            <p>Mettez vos idée/proposition dans la section "proposition/idée" </p>
+        </div>
+    </div>
   
    
 
@@ -171,9 +177,27 @@
             <a href="#" onclick="toggleSubmenu('submenu-texte15')">Texte 2 (Corneille)</a>
             <div id="submenu-texte15" class="submenu">
                 <a href="#" onclick="loadPDF('texte_ll_iii_5.pdf')">Original</a>
-                <a href="#" onclick="loadPDF('$')">Correction</a> <p></p>
+                <a href="#" onclick="loadPDF('ll_iii_5.pdf')">Correction</a> <p></p>
             </div>
         </div>
+
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte16')">Texte 3 (Corneille)</a>
+            <div id="submenu-texte16" class="submenu">
+                <a href="#" onclick="loadPDF('texte_ll_v_2-3.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('ll_v_2-3.pdf')">Correction</a> <p></p>
+            </div>
+        </div>
+
+        <div class="submenu-container">
+            <a href="#" onclick="toggleSubmenu('submenu-texte17')">Texte 4 (C.Bergerac)</a>
+            <div id="submenu-texte17" class="submenu">
+                <a href="#" onclick="loadPDF('texte_ll_cyrano.pdf')">Original</a>
+                <a href="#" onclick="loadPDF('ll_cyrano.pdf')">Correction</a> <p></p>
+            </div>
+        </div>
+
+
 
         <a href="#" onclick="loadPDF('msfvenom.pdf')">-</a>
     
